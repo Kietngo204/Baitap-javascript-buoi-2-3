@@ -86,13 +86,13 @@ document.getElementById("btnchuNhat").onclick = function () {
 */
 
 document.getElementById("btnToTal").onclick = function () {
-  //input: num6: number, numDonVi: number, numChuc: number
+  //input: num6: number,
   let num6 = +document.getElementById("input-number").value;
+
+  //output: toTal: number, numDonVi: number, numChuc: number
+  toTal = 0;
   let numChuc = 0;
   let numDonVi = 0;
-
-  //output: toTal: number
-  toTal = 0;
 
   //progress: Lấy hàng chục ta có num6 / 10, lấy hàng đơn vị num6 % 10
   numChuc = Math.floor(num6 / 10);
